@@ -13,6 +13,6 @@ class ActualCat extends Cat
 
     public function display()
     {
-        return "I'm actual cat";
+        return 'Actual Cat';
     }
 }
