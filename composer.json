@@ -1,0 +1,16 @@
+{
+    "name": "jianhuahe/php-design-pattern",
+    "description": "PHP design pattern practice",
+    "authors": [
+        {
+            "name": "Jian-Hua, He",
+            "email": "game09116@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require": {}
+}
