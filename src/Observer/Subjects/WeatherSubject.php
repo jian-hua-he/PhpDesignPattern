@@ -21,10 +21,19 @@ class WeatherSubject extends Subject
         unset($this->observers[$index]);
     }
 
-    public function notifyObserver()
+    public function notifyObservers()
     {
         foreach ($this->observers as $observer) {
-            $observer->update($this->temperature, $this->humidity, $this->pressure);
+            $observer->update($this);
         }
+    }
+
+    public function updateMeasurements($temperature, $humidity, $pressure)
+    {
+        $this->$temperature = $temperature;
+        $this->humidity = $humidity;
+        $this->pressure = $pressure;
+
+        $this->notifyObservers();
     }
 }

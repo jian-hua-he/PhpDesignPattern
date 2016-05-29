@@ -8,5 +8,5 @@ abstract class Subject
 
     public abstract function registerObserver();
     public abstract function removeObserver();
-    public abstract function notifyObserver();
+    public abstract function notifyObservers();
 }
