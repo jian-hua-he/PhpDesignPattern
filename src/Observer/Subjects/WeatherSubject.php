@@ -2,7 +2,6 @@
 
 namespace Src\Observer\Subjects;
 
-use Src\Observer\Observers\ObserverInterface;
 use Src\Observer\SubjectDatas\WeatherData;
 
 class WeatherSubject extends Subject
