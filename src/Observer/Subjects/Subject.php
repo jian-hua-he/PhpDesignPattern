@@ -4,11 +4,26 @@ namespace Src\Observer\Subjects;
 
 use Src\Observer\Observers\ObserverInterface;
 
-abstract class Subject
+class Subject
 {
     protected $observers = [];
+    protected $data;
 
-    public abstract function registerObserver(ObserverInterface $observer);
-    public abstract function removeObserver(ObserverInterface $observer);
-    public abstract function notifyObservers();
+    public function registerObserver(ObserverInterface $observer)
+    {
+        $this->observers[] = $observer;
+    }
+
+    public function removeObserver(ObserverInterface $observer)
+    {
+        $index = array_search($observer, $this->observers);
+        unset($this->observers[$index]);
+    }
+
+    public function notifyObservers()
+    {
+        foreach ($this->observers as $observer) {
+            $observer->update($this->data);
+        }
+    }
 }
