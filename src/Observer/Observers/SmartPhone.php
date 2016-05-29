@@ -30,7 +30,7 @@ class SmartPhone implements ObserverInterface, DisplayInterface
             echo "Humidity is: {$data->humidity}\n";
             echo "Pressure is: {$data->pressure}\n";
             echo "\n";
-        } else if ($data instanceof NewsData)
+        } else if ($data instanceof NewsData) {
             echo "News title: {$data->title}\n";
             echo "{$data->content}\n";
             echo "\n";

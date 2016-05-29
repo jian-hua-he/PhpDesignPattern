@@ -11,7 +11,7 @@ class NewsSubject extends Subject
         $this->data = new NewsData;
     }
 
-    public function udateNews($title, $content)
+    public function updateNews($title, $content)
     {
         $this->data->title = $title;
         $this->data->content = $content;
