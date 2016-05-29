@@ -1,6 +1,6 @@
 <?php
 
-namesapce Src\Observer\Subjects;
+namespace Src\Observer\Subjects;
 
 interface SubjectInterface
 {
