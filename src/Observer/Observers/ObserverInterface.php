@@ -2,7 +2,9 @@
 
 namespace Src\Observer\Observers;
 
+use Src\Observer\SubjectDatas\SubjectDataInterface;
+
 interface ObserverInterface
 {
-    public function update();
+    public function update(SubjectDataInterface $data);
 }

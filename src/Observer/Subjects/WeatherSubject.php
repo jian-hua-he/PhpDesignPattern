@@ -3,12 +3,16 @@
 namespace Src\Observer\Subjects;
 
 use Src\Observer\Observers\ObserverInterface;
+use Src\Observer\SubjectDatas\WeatherData;
 
 class WeatherSubject extends Subject
 {
-    private $temperature;
-    private $humidity;
-    private $pressure;
+    private $weatherData;
+
+    public function __construct()
+    {
+        $this->weatherData = new WeatherData;
+    }
 
     public function registerObserver(ObserverInterface $observer)
     {
@@ -24,15 +28,15 @@ class WeatherSubject extends Subject
     public function notifyObservers()
     {
         foreach ($this->observers as $observer) {
-            $observer->update($this);
+            $observer->update($this->weatherData);
         }
     }
 
     public function updateMeasurements($temperature, $humidity, $pressure)
     {
-        $this->$temperature = $temperature;
-        $this->humidity = $humidity;
-        $this->pressure = $pressure;
+        $this->weatherData->temperature = $temperature;
+        $this->weatherData->humidity = $humidity;
+        $this->weatherData->pressure = $pressure;
 
         $this->notifyObservers();
     }
