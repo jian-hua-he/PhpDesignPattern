@@ -2,13 +2,16 @@
 
 namespace Src\Strategy\Cats;
 
-use Src\Strategy\Behaviors\MewWithSpeaker;
+use Src\Strategy\Behaviors\MewBehaviorInterface;
+use Src\Strategy\Behaviors\WalkBehaviorInterface;
 
 class ToyCat extends Cat
 {
-    public function __construct()
+    public function __construct(MewBehaviorInterface $mewBehavior,
+                                WalkBehaviorInterface $walkBehavior)
     {
-        $this->mewBehavior = new MewWithSpeaker;
+        $this->mewBehavior = $mewBehavior;
+        $this->walkBehavior = $walkBehavior;
     }
 
     public function display()

@@ -2,13 +2,16 @@
 
 namespace Src\Strategy\Cats;
 
-use Src\Strategy\Behaviors\MewWithScreen;
+use Src\Strategy\Behaviors\MewBehaviorInterface;
+use Src\Strategy\Behaviors\WalkBehaviorInterface;
 
 class RobotCat extends Cat
 {
-    public function __construct()
+    public function __construct(MewBehaviorInterface $mewBehavior,
+                                WalkBehaviorInterface $walkBehavior)
     {
-        $this->mewBehavior = new MewWithScreen;
+        $this->mewBehavior = $mewBehavior;
+        $this->walkBehavior = $walkBehavior;
     }
 
     public function display()
