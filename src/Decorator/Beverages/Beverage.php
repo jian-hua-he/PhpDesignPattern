@@ -4,7 +4,12 @@ namespace Src\Decorator\Beverages;
 
 abstract class Beverage
 {
-    protected $name = 'Unknown Beverage';
+    protected $name;
+
+    public function __construct()
+    {
+        $this->name = 'Unknown Beverage';
+    }
 
     public abstract function cost();
 

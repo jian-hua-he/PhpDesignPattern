@@ -4,7 +4,10 @@ namespace Src\Decorator\Beverages;
 
 class Liquor extends Beverage
 {
-    protected $name = 'Liquor';
+    public function __construct()
+    {
+        $this->name = 'Liquor';
+    }
 
     public function cost()
     {

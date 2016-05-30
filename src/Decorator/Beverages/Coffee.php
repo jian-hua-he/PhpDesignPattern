@@ -4,7 +4,10 @@ namespace Src\Decorator\Beverages;
 
 class Coffee extends Beverage
 {
-    protected $name = 'Coffee';
+    public function __construct()
+    {
+        $this->name = 'Coffee';
+    }
 
     public function cost()
     {
