@@ -2,9 +2,9 @@
 
 namespace Src\Decorator\Beverages;
 
-class Liquor extends Baverage
+class Liquor extends Beverage
 {
-    protected $description = 'Liquor';
+    protected $name = 'Liquor';
 
     public function cost()
     {

@@ -4,7 +4,7 @@ namespace Src\Decorator\Beverages;
 
 class BlackTea extends Beverage
 {
-    protected $description = 'Black Tea';
+    protected $name = 'Black Tea';
 
     public function cost()
     {

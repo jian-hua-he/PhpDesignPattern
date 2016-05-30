@@ -4,7 +4,7 @@ namespace Src\Decorator\Beverages;
 
 class Coffee extends Beverage
 {
-    protected $description = 'Coffee';
+    protected $name = 'Coffee';
 
     public function cost()
     {
