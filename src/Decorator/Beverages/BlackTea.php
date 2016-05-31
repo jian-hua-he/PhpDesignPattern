@@ -4,7 +4,7 @@ namespace Src\Decorator\Beverages;
 
 class BlackTea implements BeverageInterface
 {
-    public function name()
+    public function getName()
     {
         return 'Black Tea';
     }

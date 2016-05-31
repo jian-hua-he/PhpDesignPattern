@@ -4,7 +4,7 @@ namespace Src\Decorator\Beverages;
 
 class Liquor implements BeverageInterface
 {
-    public function name()
+    public function getName()
     {
         return 'Liquor';
     }
