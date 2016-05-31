@@ -4,7 +4,7 @@ namespace Src\Decorator\Condiments;
 
 use Src\Decorator\Beverages\Beverage;
 
-class Sugar extends CondimentDecorator
+class Chocolate extends CondimentDecorator
 {
     protected $beverage;
 
