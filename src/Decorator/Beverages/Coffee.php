@@ -2,11 +2,11 @@
 
 namespace Src\Decorator\Beverages;
 
-class Coffee extends Beverage
+class Coffee Implements BeverageInterface
 {
-    public function __construct()
+    public function name()
     {
-        $this->name = 'Coffee';
+        return 'Coffee';
     }
 
     public function cost()

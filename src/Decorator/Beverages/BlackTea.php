@@ -2,11 +2,11 @@
 
 namespace Src\Decorator\Beverages;
 
-class BlackTea extends Beverage
+class BlackTea implements BeverageInterface
 {
-    public function __construct()
+    public function name()
     {
-        $this->name = 'Black Tea';
+        return 'Black Tea';
     }
 
     public function cost()
