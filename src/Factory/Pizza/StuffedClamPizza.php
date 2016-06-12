@@ -2,10 +2,12 @@
 
 namespace Src\Factory\Pizza;
 
-class StuffedClamPizza implements PizzaInterface
+class StuffedClamPizza extends Pizza
 {
-    public function description()
+    public $name = 'Stuffed Clam Pizza';
+
+    protected function prepareProcess()
     {
-        return 'Stuffed Clam Pizza';
+        echo "Add Clam\n";
     }
 }

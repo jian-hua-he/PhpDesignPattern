@@ -2,10 +2,12 @@
 
 namespace Src\Factory\Pizza;
 
-class ThinCrustPepperoniPizza implements PizzaInterface
+class ThinCrustPepperoniPizza extends Pizza
 {
-    public function description()
+    public $name = 'Thin Crust Pepperoni Pizza';
+
+    protected function prepareProcess()
     {
-        return 'Thin Crust Pepperoni Pizza';
+        echo "Add Pepperoni\n";
     }
 }
