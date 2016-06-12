@@ -2,7 +2,7 @@
 
 namespace Src\Factory\Pizza;
 
-class ThinCrustCheesePizza extends Pizza
+class ThinCrustCheesePizza implements PizzaInterface
 {
     public function description()
     {

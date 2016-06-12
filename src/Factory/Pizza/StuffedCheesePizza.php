@@ -2,7 +2,7 @@
 
 namespace Src\Factory\Pizza;
 
-class StuffedCheesePizza extends Pizza
+class StuffedCheesePizza implements PizzaInterface
 {
     public function description()
     {
