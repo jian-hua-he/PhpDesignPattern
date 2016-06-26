@@ -2,7 +2,7 @@
 
 namespace Src\AbstractFactory\CarComponents\Tires;
 
-class GermanyTire implements TireInerface
+class GermanyTire implements TireInterface
 {
     public function getDescription()
     {
