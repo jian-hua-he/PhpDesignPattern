@@ -14,5 +14,15 @@ $lightControl = new LightControl($lightOnCommand, $LightOffCommand);
 
 $lightControl->pressOnButton();
 $lightControl->pressOffButton();
+$lightControl->pressOffButton();
+$lightControl->pressOnButton();
+$lightControl->pressOffButton();
 
-echo "Command Pattern\n";
+echo "Let's undo\n";
+
+$lightControl->pressUndoButton();
+$lightControl->pressUndoButton();
+$lightControl->pressUndoButton();
+$lightControl->pressUndoButton();
+$lightControl->pressUndoButton();
+$lightControl->pressUndoButton();
