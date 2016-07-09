@@ -15,6 +15,6 @@ class LightOnCommand implements CommandInterface
 
     public function execute()
     {
-        return $light->on();
+        return $this->light->on();
     }
 }
