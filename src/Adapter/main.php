@@ -2,4 +2,11 @@
 
 require '../../vendor/autoload.php';
 
-echo "Adapter\n";
+use Src\Adapter\Plugs\EuroPlug;
+use Src\Adapter\Plugs\JapanPlug;
+
+$euroPlug = new EuroPlug;
+$euroPlug->insertEuroSocket();
+
+$japanPlug = new JapanPlug;
+$japanPlug->insertJapanSocket();
