@@ -16,6 +16,6 @@ class Popper
 
     public function pop()
     {
-        echo "Generate popcorn\n";
+        echo "Cook popcorn\n";
     }
 }

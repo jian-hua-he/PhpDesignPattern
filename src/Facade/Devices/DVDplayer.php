@@ -16,6 +16,6 @@ class DVDPlayer
 
     public function play($dvd)
     {
-        echo "Play {$dvd}...";
+        echo "Play {$dvd}...\n";
     }
 }
