@@ -2,4 +2,12 @@
 
 require "../../vendor/autoload.php";
 
-echo "Iterator\n";
+use Src\Iterator\Menus\DinerMenu;
+
+$items = ['Fired Rice', 'Dumplings', 'Beef Noodles'];
+$dinerMenu = new DinerMenu($items);
+
+while ($dinerMenu->hasNext()) {
+    $item = $dinerMenu->next();
+    echo "{$item}\n";
+}
