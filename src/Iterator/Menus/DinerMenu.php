@@ -29,4 +29,13 @@ class DinerMenu implements IteratorInterface
 
         return true;
     }
+
+    public function remove($position)
+    {
+        if ($position < count($this->menuItems)) {
+            array_splice($this->menuItems, $position, 1);
+        } else {
+            throw new \Exception('Invalid parameter');
+        }
+    }
 }
