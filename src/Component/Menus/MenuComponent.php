@@ -21,26 +21,6 @@ abstract class MenuComponent
         throw new Exception('Not implemented');
     }
 
-    public function getName()
-    {
-        throw new Exception('Not implemented');
-    }
-
-    public function getDescription()
-    {
-        throw new Exception('Not implemented');
-    }
-
-    public function getPrice()
-    {
-        throw new Exception('Not implemented');
-    }
-
-    public function isVegetarian()
-    {
-        throw new Exception('Not implemented');
-    }
-
     public function print()
     {
         throw new Exception('Not implemented');
