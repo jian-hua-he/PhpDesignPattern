@@ -21,7 +21,7 @@ abstract class MenuComponent
         throw new Exception('Not implemented');
     }
 
-    public function print()
+    public function printMenu()
     {
         throw new Exception('Not implemented');
     }

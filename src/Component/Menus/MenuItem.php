@@ -17,7 +17,7 @@ class MenuItem extends MenuComponent
         $this->price = $price;
     }
 
-    public function print()
+    public function printMenu()
     {
         echo "{$this->name}: {$this->price} -- {$this->description}\n";
     }

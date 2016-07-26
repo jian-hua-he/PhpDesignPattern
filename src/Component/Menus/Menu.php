@@ -40,10 +40,14 @@ class Menu extends MenuComponent
         return $this->menuComponents[$index];
     }
 
-    public function print()
+    public function printMenu()
     {
         echo "{$this->name}\n";
         echo "{$this->description}\n";
         echo "------------------------------\n";
+
+        foreach ($this->menuComponents as $menuComponent) {
+            $menuComponent->printMenu();
+        }
     }
 }
