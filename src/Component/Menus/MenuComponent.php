@@ -4,7 +4,7 @@ namespace Src\Component\Menus;
 
 use Exception;
 
-class MenuComponent
+abstract class MenuComponent
 {
     public function add(MenuComponent $menuComponent)
     {
