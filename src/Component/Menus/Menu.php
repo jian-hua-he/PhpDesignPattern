@@ -49,5 +49,7 @@ class Menu extends MenuComponent
         foreach ($this->menuComponents as $menuComponent) {
             $menuComponent->printMenu();
         }
+
+        echo "\n";
     }
 }
