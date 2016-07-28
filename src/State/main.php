@@ -2,4 +2,4 @@
 
 require '../../vendor/autoload.php';
 
-echo "Status Pattern\n";
+echo "State Pattern\n";
