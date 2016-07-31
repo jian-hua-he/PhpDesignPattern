@@ -32,6 +32,39 @@ class GumballMachine
         }
     }
 
+    public function insertQuarter()
+    {
+        $this->currentState->insertQuarter();
+    }
+
+    public function ejectQuarter()
+    {
+        $this->currentState->ejectQuarter();
+    }
+
+    public function turnCrank()
+    {
+        $this->currentState->turnCrank();
+    }
+
+    public function dispense()
+    {
+        $this->currentState->dispense();
+    }
+
+    public function setState(State $state)
+    {
+        $this->currentState = $state;
+    }
+
+    public function releaseBall()
+    {
+        echo "A gunball comes rolling out the solt...\n";
+        if ($this->count > 0) {
+            $this->count = $this->count - 1;
+        }
+    }
+
     public function getSoldOutState()
     {
         return $this->soldOutState;
