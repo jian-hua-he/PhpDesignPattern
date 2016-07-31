@@ -15,7 +15,7 @@ class GumballMachine
     private $hasQuarterState;
     private $soldState;
 
-    private $current_state;
+    private $currentState;
     private $count = 0;
 
     public function __construct($gumballNumber)
@@ -26,9 +26,9 @@ class GumballMachine
         $this->soldstate = new SoldState($this);
         $this->count = $gumballNumber;
 
-        $this->current_state = $this->soldOutState;
+        $this->currentState = $this->soldOutState;
         if ($this->count > 0) {
-            $this->current_state = $this->noQuarterState;
+            $this->currentState = $this->noQuarterState;
         }
     }
 
