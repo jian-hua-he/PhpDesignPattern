@@ -13,7 +13,7 @@ class HasQuarterState implements State
 
     public function insertQuarter()
     {
-        echo "You can't insert another quarter\n";
+        echo "You can’t insert another quarter\n";
     }
 
     public function ejectQuarter()
