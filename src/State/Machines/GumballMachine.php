@@ -31,4 +31,24 @@ class GumballMachine
             $this->current_state = $this->noQuarterState;
         }
     }
+
+    public function getSoldOutState()
+    {
+        return $this->soldOutState;
+    }
+
+    public function getNoQuarterState()
+    {
+        return $this->noQuarterState;
+    }
+
+    public function getHasQuarterState()
+    {
+        return $this->hasQuarterState;
+    }
+
+    public function getSoldState()
+    {
+        return $this->soldState;
+    }
 }
