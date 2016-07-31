@@ -3,7 +3,10 @@
 namespace Src\State\Machines;
 
 use Src\State\States\State;
+use Src\State\States\SoldOutState;
 use Src\State\States\NoQuarterState;
+use Src\State\States\HasQuarterState;
+use Src\State\States\SoldState;
 
 class GumballMachine
 {
@@ -17,7 +20,15 @@ class GumballMachine
 
     public function __construct($gumballNumber)
     {
+        $this->soldOutState = new SoldOutState($this);
         $this->noQuarterState = new NoQuarterState($this);
-        $this->current_state = $this->noQuarterState;
+        $this->hasQuarterState = new HasQuarterState($this);
+        $this->soldstate = new SoldState($this);
+        $this->count = $gumballNumber;
+
+        $this->current_state = $this->soldOutState;
+        if ($this->count > 0) {
+            $this->current_state = $this->noQuarterState;
+        }
     }
 }
