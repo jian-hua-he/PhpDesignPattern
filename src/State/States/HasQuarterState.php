@@ -19,13 +19,13 @@ class HasQuarterState implements State
     public function ejectQuarter()
     {
         echo "Quarter returned\n";
-        $this->gumballMachine->setState($this->getNoQuarterState());
+        $this->gumballMachine->setState($this->gumballMachine->getNoQuarterState());
     }
 
     public function turnCrank()
     {
         echo "You turned...\n";
-        $this->gumballMachine->setState($this->getSoldState());
+        $this->gumballMachine->setState($this->gumballMachine->getSoldState());
     }
 
     public function dispense()
