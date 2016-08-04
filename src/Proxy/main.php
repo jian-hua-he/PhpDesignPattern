@@ -1,3 +1,9 @@
 <?php
 
-echo "Proxy Pattern\n";
+require '../../vendor/autoload.php';
+
+use Src\Proxy\Images\ImageProxy;
+
+$imageProxy = new ImageProxy;
+$imageProxy->display();
+$imageProxy->display();
