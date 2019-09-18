@@ -1,3 +1,3 @@
 # PHP Design Pattern
 
-This is php design pattern practice.
+The practices with PHP design patterns.
